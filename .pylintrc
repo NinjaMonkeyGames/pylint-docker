@@ -1,0 +1,59 @@
+[MASTER]
+# Specify a configuration file.
+rcfile=
+
+# Python code to execute, usually for sys.path.append.
+# init-hook=
+
+# Add files or directories to the blacklist. They should be base names, not paths.
+ignore=CVS
+
+# Add files or directories matching the regex patterns to the blacklist. The regex matches against base names, not paths.
+ignore-patterns=
+
+# Python expression which should return a note.
+notes=FIXME,XXX,TODO
+
+[MESSAGES CONTROL]
+# Only show warnings with the listed confidence levels. Leave empty to show all.
+confidence=
+
+# Enable the message, report, category or checker with the given id(s).
+enable=
+
+# Disable the message, report, category or checker with the given id(s).
+disable=
+
+[REPORTS]
+# Set the output format. Available formats are text, parseable, colorized, msvs (visual studio) and html.
+output-format=text
+
+# Tells whether to display a full report or only the messages.
+reports=no
+
+[BASIC]
+# Variable names that should be ignored, separated by a comma.
+good-names=i,j,k,ex,Run,_
+
+# Bad variable names which should always be refused, separated by a comma.
+bad-names=foo,bar,baz,toto,tutu,tata
+
+# Argument names that should be ignored, separated by a comma.
+#argument-names=_
+
+# Regex for a line that is allowed to be longer than the limit.
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=100
+
+# Regular expression which should only match function or class names that do not require a docstring.
+no-docstring-rgx=__.*__
+
+[DESIGN]
+# Maximum number of arguments for function / method.
+max-args=5
+
+# Maximum number of attributes for a class (see R0902).
+max-attributes=10
